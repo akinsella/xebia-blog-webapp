@@ -13,6 +13,8 @@ function initRouter() {
     // OK
     var currentView = null;
 
+    var viewModel;
+
     // OK
     var routes = {
         '/': function() {
@@ -24,14 +26,11 @@ function initRouter() {
                 url: 'http://blog.xebia.fr/wp-json-api/get_tag_index/?callback=?',
                 dataType: 'JSONP',
                 success: function(data) {
-                    var content = "";
-                    _(data.tags).each(function(tag) {
-                        content += '<li><div class="li-content">' +
-                                '<span class="aside">' + tag.post_count + '</span>' +
-                                '<h1>' + tag.title + '</h1>' +
-                            '</div></li>';
-                    });
-                    $('#master ul#master-items').html(content);
+                    var source   = $("#tag-item-template").html();
+                    var template = Handlebars.compile(source);
+                    var html = template({ tags: data.tags });
+
+                    $('#master-content').html(html);
                 }
             });
         }

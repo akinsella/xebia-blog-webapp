@@ -117,6 +117,8 @@ article {
 
 #footer .icons {
     margin: 6px 0 6px 0;
+    float:right;
+    padding: 0 10px 0 10px;
 }
 
 #footer .icons ul li  {
