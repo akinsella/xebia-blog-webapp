@@ -36,13 +36,13 @@
         <div class="app">
             <div id="master" class="master">
                 <div class="toolbar">
-                    <p>This demo uses iOS native scroll available in IOS5, but sidesteps the page-bounce behavior/issue.</p>
-                    <a href="#/tags">tags</a>
+                    <p>This demo uses iOS native scroll available in IOS5.</p>
+                    <div class="tb-icons"><a href="#/tags">tags</a></div>
+                    <input id="search" type="text" placeholder="Search..." />
                 </div>
                 <div id="master-content" class="scrolling"></div>
             </div>
-            <div id="detail" class="detail">
-            </div>
+            <div id="detail" class="detail"></div>
         </div>
         <footer id="footer">
             <div class="icons">
@@ -92,7 +92,7 @@
     <script id="tag-item-template" type="text/x-handlebars-template">
         <ul>
             {{#each tags}}
-                <li>
+                <li data-name="{{toLowerCase this.title}}">
                     <div class="li-content">
                         <span class="aside">{{this.post_count}}</span>
                         <h1>{{this.title}}</h1>
