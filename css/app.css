@@ -1,0 +1,273 @@
+html, body {
+    height: 100%;
+    /*fixes the page-bounce on desktop safari. tested on version 5.1 / mac */
+    overflow: hidden;
+    background: #444;
+}
+
+body, ul, li {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body, button {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    height: 88px;
+    line-height: 88px;
+    color: #C6D345;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #999;
+    font-family: 'Lobster', cursive;
+}
+
+#title {
+    padding-left: 10px;
+}
+
+.toolbar {
+    border: 0;
+    border-bottom: 1px solid #999;
+    padding: 10px;
+}
+
+footer {
+    height: 44px;
+    color: #999;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 1em;
+    font-family: 'Lobster', cursive;
+}
+
+article {
+    padding: 5px 10px
+}
+
+.app {
+    position: absolute;
+    top: 89px;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #999;
+}
+
+.scrolling {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.master {
+    position: absolute;
+    width: 320px;
+    bottom: 0;
+    top: 0;
+    border: 0;
+    border-right: 1px solid #111;
+}
+
+#master-content {
+    position: absolute;
+    width: 320px;
+    top: 104px;
+    bottom: 0;
+}
+
+.detail {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 321px;
+}
+
+#title {
+    margin-left: 10px;
+}
+
+#title img {
+    vertical-align: middle;
+}
+
+#header .icons ul li  {
+    display: inline;
+    padding-left: 10px;
+}
+
+#footer .icons {
+    margin: 6px 0 6px 0;
+}
+
+#footer .icons ul li  {
+    display: inline;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+#category {
+    width: 100%;
+}
+
+.toolbar {
+    position: absolute;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    color: #ddd;
+    font-family: 'Lobster', cursive;
+    height: 82px;
+    overflow: hidden;
+}
+
+.master ul li, .toolbar, header, footer {
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #111;
+    background: #444;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #444 ), to( #333 )); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient( #444 , #333 ); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient( #444 , #333 ); /* FF3.6 */
+    background-image:     -ms-linear-gradient( #444 , #333 ); /* IE10 */
+    background-image:      -o-linear-gradient( #444 , #333 ); /* Opera 11.10+ */
+    background-image:         linear-gradient( #444 , #333 );
+}
+
+.master ul li {
+    height: 60px;
+    font-size: 0.8em;
+    color: #ddd;
+    font-family: Helvetica, Arial, sans-serif;
+    /*-webkit-text-overflow: ellipsis;*/
+    /*-moz-text-overflow: ellipsis;*/
+    /*-o-text-overflow: ellipsis;*/
+    /*-ms-text-overflow: ellipsis;*/
+    /*text-overflow: ellipsis;*/
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+
+    display: block;
+    padding: .2em 15px .2em 15px;
+    padding-right: 36px;
+    position: relative;
+    display: table;
+    width: 100%;
+}
+
+.master ul li:hover {
+    background: #333;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #393939 ), to( #292929 )); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient( #393939 , #292929 ); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient( #393939 , #292929 ); /* FF3.6 */
+    background-image:     -ms-linear-gradient( #393939 , #292929 ); /* IE10 */
+    background-image:      -o-linear-gradient( #393939 , #292929 ); /* Opera 11.10+ */
+    background-image:         linear-gradient( #393939 , #292929 );
+}
+
+.master ul li h1 {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #ddd;
+    font-family: 'Lobster', cursive;
+}
+
+.master ul li h3 {
+    font-size: 0.9em;
+    line-height: 1.2em;
+    color: #aaa;
+    padding-left: 10px;
+    font-family: 'Lobster', cursive;
+}
+
+#footer #website {
+    color: #ccc;
+    padding-right: 5px;
+}
+
+#footer #copyright {
+    color: #777;
+    padding-left: 5px;
+}
+
+#footer .separator {
+    color: #999;
+    padding-left: 5px;
+}
+
+#footer .icon {
+    box-shadow: 3px 3px 5px #222;
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+a:hover {
+    color: #222;
+}
+
+a:active {
+    color: #292929;
+}
+
+.master ul li .li-content {
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 0;
+}
+
+.aside {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top:-.9em;
+
+    font-weight: bold;
+    font-size: 11px;
+    font-family: Helvetica,Arial,sans-serif;
+    text-shadow: 0 1px 0 white;
+    white-space: nowrap;
+
+    text-align: center;
+    color: #bbb;
+
+    padding: .2em .5em;
+    border: 1px solid #666;
+
+    background: #333;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #393939 ), to( #292929 )); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient( #393939 , #292929 ); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient( #393939 , #292929 ); /* FF3.6 */
+    background-image:     -ms-linear-gradient( #393939 , #292929 ); /* IE10 */
+    background-image:      -o-linear-gradient( #393939 , #292929 ); /* Opera 11.10+ */
+    background-image:         linear-gradient( #393939 , #292929 );
+
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -o-border-radius: 1em;
+    -ms-border-radius: 1em;
+    border-radius: 1em;
+}
