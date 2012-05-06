@@ -37,7 +37,7 @@
             <div id="master" class="master">
                 <div class="toolbar">
                     <p>This demo uses iOS native scroll available in IOS5.</p>
-                    <div class="tb-icons"><a href="#/tags">tags</a></div>
+                    <div class="tb-icons"><a href="#/tag">tags</a></div>
                     <input id="search" type="text" placeholder="Search..." />
                 </div>
                 <div id="master-content" class="scrolling"></div>
@@ -79,7 +79,7 @@
                     </li>
                 </ul>
             </div>
-            <div style="margin: 10px; ">
+            <div id="footer-left">
                 <span id="website">
                     <a href="http://blog.helyx.org">Helyx.org</a>
                 </span>
@@ -92,7 +92,7 @@
     <script id="tag-item-template" type="text/x-handlebars-template">
         <ul>
             {{#each tags}}
-                <li data-name="{{toLowerCase this.title}}">
+                <li data-name="{{toLowerCase this.title}}" data-id="{{this.id}}" data-slug="{{this.slug}}">
                     <div class="li-content">
                         <span class="aside">{{this.post_count}}</span>
                         <h1>{{this.title}}</h1>
@@ -101,5 +101,27 @@
             {{/each}}
         </ul>
     </script>
+
+    <script id="posts-tag-template" type="text/x-handlebars-template">
+        <ul>
+            {{#each posts}}
+                <div id="post-{{this.id}}" data-name="{{toLowerCase this.title}}" data-id="{{this.id}}" data-slug="{{this.slug}}" class="posts-content">
+                    <div>
+                        <h1>{{this.title}}</h1>
+                        <div>{{this.content}}</div>
+                    </div>
+                </div>
+            {{/each}}
+        </ul>
+        <div id="posts-footer">
+            <div id="post-pages">
+                <ul>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+     </script>
 
 </html>
