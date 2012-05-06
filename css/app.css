@@ -306,78 +306,6 @@ a:active {
     padding-top: 0;
 }
 
-#detail #posts-footer {
-    position: absolute;
-    display: table;
-    width: 100%;
-    height: 30px;
-    bottom: 0px;
-    text-align: center;
-}
-
-#detail #posts-footer #post-pages {
-    display: table-cell;
-    text-align: center;
-}
-
-#detail #posts-footer #post-pages ul {
-    padding: 10px;
-}
-
-#detail #posts-footer #post-pages ul li {
-   	background: #141517;
-
-    display: inline-block;
-   	width: 12px;
-   	height: 12px;
-    margin-right: 4px;
-    cursor: pointer;
-   	text-indent: -9999px;
-
-   	-webkit-border-radius: 16px;
-   	-moz-border-radius: 16px;
-   	border-radius: 16px;
-
-   	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05);
-   	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05);
-   	box-shadow: inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05);
-
-}
-
-#detail .posts-content {
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #666;
-    
-    -webkit-border-radius: 0.4em;
-    -moz-border-radius: 0.4em;
-    -o-border-radius: 0.4em;
-    -ms-border-radius: 0.4em;
-    border-radius: 0.4em;
-}
-
-#detail h1 {
-    font-size: 0.9em;
-    line-height: 1.2em;
-    color: #aaa;
-    padding-left: 10px;
-    font-family: 'Lobster', cursive;
-}
-
-#detail #posts-footer #post-pages ul li:hover {
-    background: #a5cd4e;
-    background: -moz-linear-gradient(top,  #a5cd4e 0%, #6b8f1a 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5cd4e), color-stop(100%,#6b8f1a));
-    background: -webkit-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
-    background: -o-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
-    background: -ms-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
-    background: linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
-
-    -webkit-box-shadow: inset 0px 1px 1px rgba(255,255,255, .4), 0px 1px 1px rgba(0,0,0, .3);
-    -moz-box-shadow: inset 0px 1px 1px rgba(255,255,255, .4), 0px 1px 1px rgba(0,0,0, .3);
-    box-shadow: inset 0px 1px 1px rgba(255,255,255, .4), 0px 1px 1px rgba(0,0,0, .3);
-}
-
 .aside {
     position: absolute;
     right: 10px;
@@ -511,4 +439,109 @@ a:active {
    81.81%  { background-position: 0 -360px; }
    90.90%  { background-position: 0 -400px; }
   100.00%  { background-position: 0 -440px; }
+}
+
+
+#detail #posts-footer {
+    position: absolute;
+    display: table;
+    width: 100%;
+    height: 30px;
+    bottom: 0px;
+    text-align: center;
+    background: #444;
+}
+
+#detail #posts-footer #post-pages {
+    display: table-cell;
+    text-align: center;
+}
+
+#detail #posts-footer #post-pages ul {
+    padding: 7px 0 5px 0;
+}
+
+#detail #posts-footer #post-pages ul li {
+   	background: #141517;
+
+    display: inline-block;
+   	width: 12px;
+   	height: 12px;
+    margin-right: 4px;
+    cursor: pointer;
+   	text-indent: -9999px;
+
+   	-webkit-border-radius: 16px;
+   	-moz-border-radius: 16px;
+   	border-radius: 16px;
+
+   	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05);
+   	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05);
+   	box-shadow: inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05);
+
+}
+
+#detail #posts-footer #post-pages ul li:hover {
+    background: #a5cd4e;
+    background: -moz-linear-gradient(top,  #a5cd4e 0%, #6b8f1a 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5cd4e), color-stop(100%,#6b8f1a));
+    background: -webkit-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+    background: -o-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+    background: -ms-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+    background: linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+
+    -webkit-box-shadow: inset 0px 1px 1px rgba(255,255,255, .4), 0px 1px 1px rgba(0,0,0, .3);
+    -moz-box-shadow: inset 0px 1px 1px rgba(255,255,255, .4), 0px 1px 1px rgba(0,0,0, .3);
+    box-shadow: inset 0px 1px 1px rgba(255,255,255, .4), 0px 1px 1px rgba(0,0,0, .3);
+}
+
+
+#detail #post-list {
+    position: absolute;
+    bottom: 30px;
+    top: 0;
+    left: 0;
+    right:0;
+}
+
+#detail #post-list ul li h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    color: #aaa;
+    font-family: 'Lobster', cursive;
+    height: 50px;
+}
+
+@media screen and (max-width: 960px) {
+
+    #detail #post-list ul li {
+        display: block;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 961px) {
+    #detail #post-list ul li {
+        width: 50%;
+
+        display: block;
+        height: auto;
+        float: left;
+
+    }
+}
+
+#detail #post-list ul li div.post-content {
+    border: 3px solid #666;
+    padding: 10px;
+    margin: 10px;
+
+    -webkit-border-radius: 0.4em;
+       -moz-border-radius: 0.4em;
+         -o-border-radius: 0.4em;
+        -ms-border-radius: 0.4em;
+            border-radius: 0.4em;
+
 }
