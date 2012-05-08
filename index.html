@@ -23,7 +23,9 @@
         <script src="javascript/lib/handlebars/handlebars.1.0.beta.6.js"></script>
         <script src="javascript/lib/amplify/amplify-1.1.0.js"></script>
         <script src="javascript/lib/underscore/underscore-1.3.1.js"></script>
+        <script src="javascript/lib/md5.js"></script>
         <script src="javascript/lib/director.js"></script>
+        <script src="javascript/lib/date-2007.11.js"></script>
         <script src="javascript/app.js"></script>
     </head>
     <body>
@@ -106,10 +108,21 @@
         <div id="post-list" class="scrolling">
             <ul>
                 {{#each posts}}
-                    <li id="post-{{this.id}}" data-name="{{toLowerCase this.title}}" data-id="{{this.id}}" data-slug="{{this.slug}}">
-                        <div class="post-content">
-                            <h1>{{this.title}}</h1>
-                            <div>{{this.content}}</div>
+                    <li id="post-{{this.id}}" data-name="{{toLowerCase this.title}}" data-id="{{this.id}}" data-slug="{{this.slug}}" class="post-item">
+                        <div class="post">
+                            <div class="post-header">
+                                <img src="{{this.author.imageUrl}}" class="post-image" />
+                                <div class="post-date">{{this.dateFormatted}}</div>
+                                <h1 class="post-author">{{this.author.first_name}} {{this.author.last_name}}</h1>
+                                <ul class="post-tags">
+                                    {{#each this.tags}}
+                                    <li class="post-tag">{{this.title}}</li>
+                                    {{/each}}
+                                </ul>
+
+                            </div>
+                            <h1 class="post-title">{{this.title}}</h1>
+                            <div class="post-content">{{this.content}}</div>
                         </div>
                     </li>
                 {{/each}}

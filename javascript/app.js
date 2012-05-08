@@ -81,6 +81,13 @@ function initRouter() {
                 success: function(data) {
                     var source = $("#posts-tag-template").html();
                     var template = Handlebars.compile(source);
+
+                    _(data.posts).each(function(post) {
+                        var authorEmailMd5Hash = md5((post.author.nickname + '@xebia.fr').trim().toLowerCase());
+                        post.author.imageUrl = "http://www.gravatar.com/avatar/" + authorEmailMd5Hash;
+                        post.dateFormatted = Date.parseExact(post.date, 'yyyy-MM-dd HH:mm:ss').toString("HH:mm");
+                    });
+
                     var html = template({ posts: data.posts });
 
                     $('#detail').html(html);
@@ -95,11 +102,11 @@ function initRouter() {
     // OK
     Router(routes).configure({
         on: function(){
-            amplify.store('hash', location.hash);
+            // amplify.store('hash', location.hash);
         },
         notfound: function(){
             location.hash = '/';
         }
-    }).init(amplify.store('hash') || '/');
+    }).init('/'); // .init(amplify.store('hash') || '/')
 
 }

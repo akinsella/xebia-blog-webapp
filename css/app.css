@@ -504,26 +504,16 @@ a:active {
     right:0;
 }
 
-#detail #post-list ul li h1 {
-    padding: 0;
-    margin: 0;
-    font-size: 0.9em;
-    line-height: 1.2em;
-    color: #aaa;
-    font-family: 'Lobster', cursive;
-    height: 50px;
-}
-
 @media screen and (max-width: 960px) {
 
-    #detail #post-list ul li {
+    #detail #post-list ul li.item {
         display: block;
         height: auto;
     }
 }
 
 @media screen and (min-width: 961px) {
-    #detail #post-list ul li {
+    #detail #post-list ul li.post-item {
         width: 50%;
 
         display: block;
@@ -533,7 +523,7 @@ a:active {
     }
 }
 
-#detail #post-list ul li div.post-content {
+.post {
     border: 3px solid #666;
     padding: 10px;
     margin: 10px;
@@ -544,4 +534,72 @@ a:active {
         -ms-border-radius: 0.4em;
             border-radius: 0.4em;
 
+}
+
+.post-header {
+    background: #333;
+    height: 64px;
+}
+
+.post-author {
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+    color: #aaa;
+    font-size: 0.9em;
+    line-height: 1.0em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.post-image {
+    float:left;
+    margin-right: 10px;
+    width: 64px;
+    height: 64px;
+}
+
+.post-date {
+    float: right;
+    padding: 5px;
+    font-weight: bold;
+    color: #aaa;
+    font-size: 0.9em;
+    line-height: 1.0em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.post-title {
+    margin: 5px 2px 5px 2px;
+    color: #aaa;
+    height: 50px;
+    font-weight: bold;
+    font-size: 0.9em;
+    line-height: 1.0em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.post-content {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+    line-height: 1.0em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+ul.post-tags {
+    font-size: 0.8em;
+    line-height: 1.1em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+li.post-tag {
+    display: inline;
+}
+
+li.post-tag:after {
+    content: ",";
+}
+
+li.post-tag:last-child:after {
+    content: "";
 }
