@@ -505,7 +505,6 @@ a:active {
 }
 
 @media screen and (max-width: 960px) {
-
     #detail #post-list ul li.item {
         display: block;
         height: auto;
@@ -515,17 +514,14 @@ a:active {
 @media screen and (min-width: 961px) {
     #detail #post-list ul li.post-item {
         width: 50%;
-
         display: block;
         height: auto;
         float: left;
-
     }
 }
 
 .post {
-    border: 3px solid #666;
-    padding: 10px;
+    /*padding: 10px;*/
     margin: 10px;
 
     -webkit-border-radius: 0.4em;
@@ -538,7 +534,7 @@ a:active {
 
 .post-header {
     background: #333;
-    height: 64px;
+    /*height: 64px;*/
 }
 
 .post-author {
@@ -568,25 +564,15 @@ a:active {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.post-title {
-    margin: 5px 2px 5px 2px;
-    color: #aaa;
-    height: 50px;
-    font-weight: bold;
-    font-size: 0.9em;
-    line-height: 1.0em;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-.post-content {
-    padding: 5px;
-    font-weight: bold;
-    font-size: 0.9em;
-    line-height: 1.0em;
-    font-family: Helvetica, Arial, sans-serif;
+.post-header:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 ul.post-tags {
+    padding-bottom: 5px;
+    color: #888;
     font-size: 0.8em;
     line-height: 1.1em;
     font-family: Helvetica, Arial, sans-serif;
@@ -602,4 +588,30 @@ li.post-tag:after {
 
 li.post-tag:last-child:after {
     content: "";
+}
+
+.post-body {
+    padding: 0;
+    margin: 0;
+    background: #4a4a4a;
+    height: 110px;
+}
+
+.post-title {
+    padding: 5px 0 0 5px;
+    margin: 0;
+    color: #222;
+    font-weight: normal;
+    font-size: 1.0em;
+    line-height: 1.0em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.post-content {
+    padding: 5px;
+    font-weight: normal;
+    color: #222;
+    font-size: 0.8em;
+    line-height: 1.0em;
+    font-family: Helvetica, Arial, sans-serif;
 }
