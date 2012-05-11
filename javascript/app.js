@@ -76,7 +76,7 @@ function AppModule($) {
     }
 
     function onHomePageLoad() {
-        // Do Nothing
+        onTagsPageLoad();
     }
 
     var tagsInitialized = false;
