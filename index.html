@@ -94,7 +94,7 @@
     <script id="tag-item-template" type="text/x-handlebars-template">
         <ul>
             {{#each tags}}
-                <li data-name="{{toLowerCase this.title}}" data-id="{{this.id}}" data-slug="{{this.slug}}">
+                <li data-name="{{toLowerCase this.title}}" data-id="{{this.id}}" data-slug="{{this.slug}}" class="{{#if this.selected}}selected{{/if}}">
                     <div class="li-content">
                         <span class="aside">{{this.post_count}}</span>
                         <h1>{{this.title}}</h1>
@@ -112,18 +112,24 @@
                         <div class="post">
                             <div class="post-header">
                                 <img src="{{this.author.imageUrl}}" class="post-image" />
-                                <div class="post-date">{{this.dateFormatted}}</div>
+                                <div class="post-date">Le {{this.dateFormatted}}, à {{this.timeFormatted}}</div>
                                 <h1 class="post-author">{{this.author.first_name}} {{this.author.last_name}}</h1>
+                                <h1 class="post-title">{{this.title}}</h1>
+                            </div>
+
+                            <div class="post-body">
+
+<!--
                                 <ul class="post-tags">
                                     {{#each this.tags}}
                                     <li class="post-tag">{{this.title}}</li>
                                     {{/each}}
                                 </ul>
-                            </div>
-                            <div class="post-body">
-                                <h1 class="post-title">{{this.title}}</h1>
+-->
+
                                 <div class="post-content">{{this.excerpt}}</div>
                             </div>
+
                         </div>
                     </li>
                 {{/each}}
@@ -132,9 +138,9 @@
         <div id="posts-footer">
             <div id="post-pages">
                 <ul>
-                    <li>&nbsp;</li>
-                    <li>&nbsp;</li>
-                    <li>&nbsp;</li>
+                    <li class="selected"><a href="">&nbsp;</a></li>
+                    <li><a href="">&nbsp;</a></li>
+                    <li><a href="">&nbsp;</a></li>
                 </ul>
             </div>
         </div>
