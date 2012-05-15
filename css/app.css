@@ -123,6 +123,11 @@ article {
     display: inline;
     padding-left: 10px;
     vertical-align: middle;
+    opacity: 0.5;
+}
+
+#footer .icons ul li:hover  {
+    opacity: 1;
 }
 
 #category {

@@ -49,32 +49,32 @@
         <footer id="footer">
             <div class="icons">
                 <ul>
-                    <li>
+                    <li id="icon-delicious">
                         <a href="http://delicious.com/akinsella">
                             <img src="image/icons/32x32/delicious.png" width="32" height="32" class="icon" />
                         </a>
                     </li>
-                    <li>
+                    <li id="icon-google-plus">
                         <a href="https://plus.google.com/110933524696741027500/posts">
                             <img src="image/icons/32x32/googleplus.png" width="32" height="32" class="icon" />
                         </a>
                     </li>
-                    <li>
+                    <li id="icon-linkedin">
                         <a href="http://www.linkedin.com/in/alexiskinsella">
                             <img src="image/icons/32x32/linkedin.png" width="32" height="32" class="icon" />
                         </a>
                     </li>
-                    <li>
+                    <li id="icon-feed">
                         <a href="http://blog.helyx.org/feed">
                             <img src="image/icons/32x32/rss.png" width="32" height="32" class="icon" />
                         </a>
                     </li>
-                    <li>
+                    <li id="icon-wordpress">
                         <a href="http://blog.helyx.org">
                             <img src="image/icons/32x32/wordpress.png" width="32" height="32" class="icon" />
                         </a>
                     </li>
-                    <li>
+                    <li id="icon-twitter">
                         <a href="http://twitter.com/#!/alexiskinsella">
                             <img src="image/icons/32x32/twitter.png" width="32" height="32" class="icon" />
                         </a>
@@ -118,7 +118,6 @@
                             </div>
 
                             <div class="post-body">
-
 <!--
                                 <ul class="post-tags">
                                     {{#each this.tags}}
@@ -126,7 +125,6 @@
                                     {{/each}}
                                 </ul>
 -->
-
                                 <div class="post-content">{{this.excerpt}}</div>
                             </div>
 
@@ -138,9 +136,10 @@
         <div id="posts-footer">
             <div id="post-pages">
                 <ul>
-                    <li class="selected"><a href="">&nbsp;</a></li>
-                    <li><a href="">&nbsp;</a></li>
-                    <li><a href="">&nbsp;</a></li>
+                    {{#each pages}}
+                        <li class="{{#if this.selected}}selected{{/if}}" onclick="location.hash='{{this.hash}}'">
+                        </li>
+                    {{/each}}
                 </ul>
             </div>
         </div>

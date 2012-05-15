@@ -27,15 +27,17 @@ function AppModule($) {
         var routes = {
             '/': onHomePageLoad,
             '/tag': onTagsPageLoad,
-            '/tag/:slug?page=:page': onTagPageLoad
+            '/tag/:slug': onTagPageLoad,
+            '/tag/:slug/:page': onTagPageLoad
         };
 
         // OK
         Router(routes).configure({
-            on: function(){
+            on: function() {
                 // amplify.store('hash', location.hash);
             },
-            notfound: function(){
+            notfound: function() {
+                console.log('Path not found: ', this.path);
                 location.hash = '/';
             }
         }).init('/'); // .init(amplify.store('hash') || '/')
@@ -69,6 +71,18 @@ function AppModule($) {
             $(this).addClass('selected');
             location.hash = '#/tag/' + $(this).attr('data-slug');
         });
+    }
+
+    function getUrlParameterByName(uri, name) {
+        name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+        var regex = new RegExp( "[\\?&]" + name + "=([^&#]*)" );
+        var results = regex.exec( uri );
+        if( results == null ) {
+            return undefined;
+        }
+        else {
+            return decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
     }
 
     function showMasterLoadIndicator(parent) {
@@ -113,16 +127,36 @@ function AppModule($) {
     function onTagPageLoad(tagSlug, page) {
         showMasterLoadIndicator('#detail');
 
+        page = page || 1;
+
         if (!tagsInitialized) {
             onTagsPageLoad(tagSlug);
         }
 
+        var itemByPage = 8;
+
         $.ajax({
-            url: 'http://blog.xebia.fr/wp-json-api//get_tag_posts/?exclude=description,parent,content,comments,attachments&tag_slug=' + tagSlug + '&page=' + page + '&count=8&callback=?',
+            url: 'http://blog.xebia.fr/wp-json-api//get_tag_posts/?exclude=description,parent,content,comments,attachments&tag_slug=' + tagSlug + '&page=' + page + '&count=' + itemByPage + '&callback=?',
             dataType: 'JSONP',
             success: function(data) {
                 var source = $("#posts-tag-template").html();
                 var template = Handlebars.compile(source);
+
+                data.pagination = {
+                    itemByPage: itemByPage,
+                    currentPage: page,
+                    itemOnPage: data.count,
+                    pageCount: data.pages,
+                    pages: []
+                };
+
+                for (var i = 1 ; i <= data.pagination.pageCount ; i++) {
+                    data.pagination.pages.push({
+                        id: i,
+                        selected: data.pagination.currentPage == i,
+                        hash: '#/tag/' + tagSlug + "/" + i
+                    });
+                }
 
                 _(data.posts).each(function(post) {
                     var authorEmailMd5Hash = md5((post.author.nickname + '@xebia.fr').trim().toLowerCase());
@@ -132,7 +166,7 @@ function AppModule($) {
                     post.timeFormatted = date.toString("HH:mm");
                 });
 
-                var html = template({ posts: data.posts });
+                var html = template({ posts: data.posts, pages: data.pagination.pages });
 
                 $('#detail').html(html);
             },
