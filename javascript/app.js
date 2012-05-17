@@ -116,10 +116,12 @@ function AppModule($) {
                 var html = template({ tags: data.tags });
 
                 $('#master-content').html(html);
+                $('#context-title').text('Tags');
                 tagsInitialized = true;
             },
             error: function() {
-                $('#master-content').html("");
+                $('#master-content').html('');
+                $('#context-title').text('');
             }
         });
     }
@@ -169,9 +171,11 @@ function AppModule($) {
                 var html = template({ posts: data.posts, pages: data.pagination.pages });
 
                 $('#detail').html(html);
+                $('#context-title').text(tagSlug);
             },
             error: function() {
                 $('#detail').html("");
+                $('#context-title').text('');
             }
         });
     }

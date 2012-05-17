@@ -6,12 +6,12 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <meta name="format-detection" content="telephone=no">
-        <title>HTML5 & CSS3 Showcase</title>
+        <title>Xebia Blog App</title>
 
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
         <link rel="stylesheet" href="javascript/lib/prettify/twilight.css" />
 
-        <link rel="stylesheet" href="css/app.css" />
+        <link rel="stylesheet/less" type="text/css" href="css/app.less" />
 
         <script src="javascript/lib/prettify/prettify.js"></script>
         <script src="javascript/lib/prettify/lang-css.js"></script>
@@ -23,6 +23,9 @@
         <script src="javascript/lib/handlebars/handlebars.1.0.beta.6.js"></script>
         <script src="javascript/lib/amplify/amplify-1.1.0.js"></script>
         <script src="javascript/lib/underscore/underscore-1.3.1.js"></script>
+
+        <script src="javascript/lib/less/less-1.3.0.min.js"></script>
+
         <script src="javascript/lib/md5.js"></script>
         <script src="javascript/lib/director.js"></script>
         <script src="javascript/lib/date-2007.11.js"></script>
@@ -30,16 +33,17 @@
     </head>
     <body>
         <header id="header">
-            <div style="float:right; padding: 0 20px 0 20px;">QCon London – Développement Web mobile</div>
-            <div id="title">
-                <img src="image/icons/icon-iphone-57.png" width="57" /> Devoxx Mobile
+            <div id="context-title"></div>
+            <div id="app-name">
+                <img src="image/xebia_logo-large-transparent.png" height="57" />
             </div>
         </header>
         <div class="app">
             <div id="master" class="master">
                 <div class="toolbar">
-                    <p>This demo uses iOS native scroll available in IOS5.</p>
-                    <div class="tb-icons"><a href="#/tag">tags</a></div>
+                    <div class="tb-icons">
+                        <a href="#/tag">Tags</a> - <a href="#/tag">Catégories</a> - <a href="#/tag">Auteurs</a>
+                    </div>
                     <input id="search" type="text" placeholder="Search..." />
                 </div>
                 <div id="master-content" class="scrolling"></div>
