@@ -76,8 +76,8 @@ $master-item-height: 60px;
     transform-origin:          top left;
 }
 
-@mixin keyframe-type {
-    0.00%  { background-position: 0   -0px; }
+@mixin load-indicator-keyframes {
+   0.00%  { background-position: 0   -0px; }
     9.09%  { background-position: 0  -40px; }
    18.18%  { background-position: 0  -80px; }
    27.27%  { background-position: 0 -120px; }
@@ -91,18 +91,10 @@ $master-item-height: 60px;
   100.00%  { background-position: 0 -440px; }
 }
 
-@-webkit-keyframes load-indicator {
-    @include keyframe-type;
-}
-
-@-moz-keyframes load-indicator {
-    @include keyframe-type;
-}
-
-@keyframes load-indicator {
-    @include keyframe-type;
-}
-
+@-webkit-keyframes load-indicator { @include load-indicator-keyframes; }
+   @-moz-keyframes load-indicator { @include load-indicator-keyframes; }
+     @-o-keyframes load-indicator { @include load-indicator-keyframes; }
+        @keyframes load-indicator { @include load-indicator-keyframes; }
 
 html, body {
     height: 100%;
@@ -465,9 +457,7 @@ article {
     cursor: pointer;
    	text-indent: -9999px;
 
-   	-webkit-border-radius: 16px;
-   	-moz-border-radius: 16px;
-   	border-radius: 16px;
+   	@include border-radius(16px);
 
    	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05);
    	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05);
@@ -476,13 +466,8 @@ article {
 }
 
 #post-pages ul li.selected {
-    background: #a5cd4e;
-    background: -moz-linear-gradient(top,  #a5cd4e 0%, #6b8f1a 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5cd4e), color-stop(100%,#6b8f1a));
-    background: -webkit-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
-    background: -o-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
-    background: -ms-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
-    background: linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+
+    @include linear-gradient(#a5cd4e, #6b8f1a);
 
     -webkit-box-shadow: inset 0px 1px 1px rgba(255,255,255, .4), 0px 1px 1px rgba(0,0,0, .3);
     -moz-box-shadow: inset 0px 1px 1px rgba(255,255,255, .4), 0px 1px 1px rgba(0,0,0, .3);
@@ -518,12 +503,7 @@ article {
     /*padding: 10px;*/
     margin: 10px;
 
-    -webkit-border-radius: 0.4em;
-       -moz-border-radius: 0.4em;
-         -o-border-radius: 0.4em;
-        -ms-border-radius: 0.4em;
-            border-radius: 0.4em;
-
+    @include border-radius(0.4em);
 }
 
 .post-header {
