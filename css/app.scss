@@ -1,11 +1,74 @@
 
-$bg: #444;
+$background-color: #444;
+
+$post-pages-color: #141517;
+
+$link-active-color: #292929;
+$link-color: #ccc;
+$link-hover-color: #222;
+
+$header-font-color: #C6D345;
+$header-font-shadow-color: #999;
+
+$app-border-top-color: #222;
+$app-border-bottom-color: #999;
+
+$master-border-right-color: #111;
+
+$search-background-color: #eee;
+$search-placeholder-font-color: #9c9c9c;
+
+$toolbar-border-bottom-color: #999;
+$toolbar-font-color: #ddd;
+
+$ui-border-top-color: #666;
+$ui-border-bottom-color: #111;
+$ui-linear-gradient-light-color: #444;
+$ui-linear-gradient-dark-color: #333;
+$ui-linear-gradient-selected-light-color: #5C7DAB;
+$ui-linear-gradient-selected-dark-color: #406281;
+
+$ui-master-list-item-h1-color: #ddd;
+$ui-master-list-item-h3-color: #aaa;
+$ui-master-list-item-color: #ddd;
+
+$footer-website-font-color: #ccc;
+$footer-copyright-font-color: #777;
+$footer-separator-color: #999;
+$footer-icon-box-shadow-color: #222;
+
+$ui-aside-color: #bbb;
+$ui-aside-border-color: #666;
+
+$ui-aside-linear-gradient-light-color: #393939;
+$ui-aside-linear-gradient-dark-color: #292929;
+
+$ui-master-content-background-color: #333;
+
+$ui-page-item-selected-linear-gradient-light-color: #a5cd4e;
+$ui-page-item-selected-linear-gradient-dark-color: #6b8f1a;
+
+$ui-post-header-background-color: #333;
+$ui-post-author-background-color: #aaa;
+$ui-post-date-background-color: #aaa;
+$ui-post-body-background-color: #4a4a4a;
+$ui-post-tag-color: #888;
+$ui-post-title-color: #ccc;
+$ui-post-content-color: #222;
+
+$ui-post-body-height: 110px;
+$ui-post-content-height: 100px;
+$ui-post-image-width: 64px;
+
 $master-width: 320px;
 $header-height: 88px;
 $footer-height: 44px;
 $toolbar-height: 84px;
 $toolbar-width: $master-width - 20;
 $master-item-height: 60px;
+
+$master-list-item-border-top-color: #666;
+$master-list-item-border-bottom-color: #111;
 
 @mixin border-top($color) {
     border-top: 1px solid $color;
@@ -76,6 +139,12 @@ $master-item-height: 60px;
     transform-origin:          top left;
 }
 
+@mixin box-shadow($box-shadow-1, $box-shadow-2) {
+   	-webkit-box-shadow: $box-shadow-1, $box-shadow-2;
+   	   -moz-box-shadow: $box-shadow-1, $box-shadow-2;
+   	        box-shadow: $box-shadow-1, $box-shadow-2;
+}
+
 @mixin load-indicator-keyframes {
    0.00%  { background-position: 0   -0px; }
     9.09%  { background-position: 0  -40px; }
@@ -100,7 +169,7 @@ html, body {
     height: 100%;
     /*fixes the page-bounce on desktop safari. tested on version 5.1 / mac */
     overflow: hidden;
-    background: $bg;
+    background: $background-color;
 }
 
 textarea, input {
@@ -119,24 +188,23 @@ ul {
 
 a {
     text-decoration: none;
-    color: #ccc;
+    color: $link-color;
 
     &:hover {
-        color: #222;
+        color: $link-hover-color;
     }
 
     &:active {
-        color: #292929;
+        color: $link-active-color;
     }
 }
-
 
 header {
     height: $header-height;
     line-height: $header-height;
-    color: #C6D345;
+    color: $header-font-color;
     font-size: 2em;
-    text-shadow: 1px 1px 1px #999;
+    text-shadow: 1px 1px 1px $header-font-shadow-color;
     font-family: 'Lobster', cursive;
 }
 
@@ -168,8 +236,8 @@ article {
     bottom: $footer-height + 1;
     left: 0;
     right: 0;
-    @include border-top(#222);
-    @include border-bottom(#999);
+    @include border-top($app-border-top-color);
+    @include border-bottom($app-border-bottom-color);
 }
 
 .scrolling {
@@ -185,7 +253,7 @@ article {
     bottom: 0;
     top: 0;
     border: 0;
-    @include border-right(#111);
+    @include border-right($master-border-right-color);
 }
 
 #master-content {
@@ -243,9 +311,9 @@ article {
     border: 0;
     padding: 0;
     margin: 0;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid $toolbar-border-bottom-color;
     font-size: 0.9em;
-    color: #ddd;
+    color: $toolbar-font-color;
     font-family: 'Lobster', cursive;
     height: $toolbar-height;
     overflow: hidden;
@@ -269,7 +337,7 @@ article {
     bottom: 10px;
 	font-family: Helvetica,Arial,sans-serif;
 	border: 1px solid black;
-	background: #eee;
+	background: $search-background-color;
     height: 1.6em;
     line-height: 1.6em;
     padding-left: 10px;
@@ -278,7 +346,7 @@ article {
 }
 
 @mixin search-placeholder {
-   color: #9c9c9c;
+   color: $search-placeholder-font-color;
    font-style: italic;
 }
 
@@ -295,9 +363,9 @@ article {
 }
 
 .toolbar, header, footer {
-    @include border-top(#666);
-    @include border-bottom(#111);
-    @include linear-gradient(#444, #333);
+    @include border-top($ui-border-top-color);
+    @include border-bottom($ui-border-bottom-color);
+    @include linear-gradient($ui-linear-gradient-light-color, $ui-linear-gradient-dark-color);
 }
 
 .master ul li {
@@ -306,7 +374,7 @@ article {
     width: 100%;
     height: $master-item-height;
     font-size: 0.8em;
-    color: #ddd;
+    color: $ui-master-list-item-color;
     font-family: Helvetica, Arial, sans-serif;
 
     padding: .2em 15px .2em 15px;
@@ -314,20 +382,26 @@ article {
 
     cursor: pointer;
 
-    @include border-top(#666);
-    @include border-bottom(#111);
-    @include linear-gradient(#444, #333);
+    @include border-top($master-list-item-border-top-color);
+    @include border-bottom($master-list-item-border-bottom-color);
+    @include linear-gradient($ui-linear-gradient-light-color, $ui-linear-gradient-dark-color);
 
     &:hover {
-        @include linear-gradient(darken(#444, 5%), darken(#333, 5%));
+        @include linear-gradient(
+            darken($ui-linear-gradient-light-color, 5%),
+            darken($ui-linear-gradient-dark-color, 5%)
+        );
     }
 }
 
 .master ul li.selected {
-    @include linear-gradient(#5C7DAB, #406281);
+    @include linear-gradient($ui-linear-gradient-selected-light-color, $ui-linear-gradient-selected-dark-color);
 
     &:hover {
-        @include linear-gradient(darken(#5C7DAB, 5%), darken(#406281, 5%));
+        @include linear-gradient(
+            darken($ui-linear-gradient-selected-light-color, 5%),
+            darken($ui-linear-gradient-selected-dark-color, 5%)
+        );
     }
 }
 
@@ -340,25 +414,25 @@ article {
 .master ul li h1 {
     font-size: 1.2em;
     line-height: 1.5em;
-    color: #ddd;
+    color: $ui-master-list-item-h1-color;
     font-family: 'Lobster', cursive;
 }
 
 .master ul li h3 {
     font-size: 0.9em;
     line-height: 1.2em;
-    color: #aaa;
+    color: $ui-master-list-item-h3-color;
     padding-left: 10px;
     font-family: 'Lobster', cursive;
 }
 
 #website {
-    color: #ccc;
+    color: $footer-website-font-color;
     padding-right: 5px;
 }
 
 #copyright {
-    color: #777;
+    color: $footer-copyright-font-color;
     padding-left: 5px;
 }
 
@@ -367,12 +441,12 @@ article {
 }
 
 #footer .separator {
-    color: #999;
+    color: $footer-separator-color;
     padding-left: 5px;
 }
 
 #footer .icon {
-    box-shadow: 3px 3px 5px #222;
+    box-shadow: 3px 3px 5px $footer-icon-box-shadow-color;
 }
 
 .aside {
@@ -387,14 +461,19 @@ article {
     white-space: nowrap;
 
     text-align: center;
-    color: #bbb;
+    color: $ui-aside-color;
 
     padding: .2em .5em;
-    border: 1px solid #666;
+    border: 1px solid $ui-aside-border-color;
 
-    @include linear-gradient(#393939, #292929);
+    @include linear-gradient($ui-aside-linear-gradient-light-color, $ui-aside-linear-gradient-dark-color);
     @include background-clip(padding-box);
     @include border-radius(1em);
+}
+
+#master-content {
+    z-index: 0;
+    background: $ui-master-content-background-color;
 }
 
 .load-indicator-wrapper {
@@ -407,12 +486,6 @@ article {
     background: #3a3a3a;
 
     @include border-radius(0.8em);
-}
-
-#master-content {
-    z-index: 0;
-
-    background: #333;
 }
 
 .load-indicator {
@@ -435,7 +508,7 @@ article {
     height: 30px;
     bottom: 0px;
     text-align: center;
-    background: #444;
+    background: $background-color;
 }
 
 #post-pages {
@@ -448,7 +521,7 @@ article {
 }
 
 #post-pages ul li {
-   	background: #141517;
+   	background: $post-pages-color;
 
     display: inline-block;
    	width: 12px;
@@ -458,22 +531,16 @@ article {
    	text-indent: -9999px;
 
    	@include border-radius(16px);
-
-   	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05);
-   	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05);
-   	box-shadow: inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05);
-
+    @include box-shadow(inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05));
 }
 
 #post-pages ul li.selected {
-
-    @include linear-gradient(#a5cd4e, #6b8f1a);
-
-    -webkit-box-shadow: inset 0px 1px 1px rgba(255,255,255, .4), 0px 1px 1px rgba(0,0,0, .3);
-    -moz-box-shadow: inset 0px 1px 1px rgba(255,255,255, .4), 0px 1px 1px rgba(0,0,0, .3);
-    box-shadow: inset 0px 1px 1px rgba(255,255,255, .4), 0px 1px 1px rgba(0,0,0, .3);
+    @include linear-gradient(
+        $ui-page-item-selected-linear-gradient-light-color,
+        $ui-page-item-selected-linear-gradient-dark-color
+    );
+    @include box-shadow(inset 0px 1px 1px rgba(255,255,255, .4), 0px 1px 1px rgba(0,0,0, .3));
 }
-
 
 #post-list {
     position: absolute;
@@ -484,14 +551,14 @@ article {
 }
 
 @media screen and (max-width: 960px) {
-    #detail #post-list ul li.item {
+    #post-list ul li.item {
         display: block;
         height: auto;
     }
 }
 
 @media screen and (min-width: 961px) {
-    #detail #post-list ul li.post-item {
+    #post-list ul li.post-item {
         width: 50%;
         display: block;
         height: auto;
@@ -508,15 +575,21 @@ article {
 
 .post-header {
     position: relative;
-    background: #333;
+    background: $ui-post-header-background-color;
     height: 64px;
+
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
 }
 
 .post-author {
     padding: 5px;
     margin: 5px;
     font-weight: bold;
-    color: #aaa;
+    color: $ui-post-author-background-color;
     font-size: 0.9em;
     line-height: 1.0em;
     font-family: Helvetica, Arial, sans-serif;
@@ -533,25 +606,20 @@ article {
     float: right;
     padding: 5px;
     font-weight: bold;
-    color: #aaa;
+    color: $ui-post-date-background-color;
     font-size: 0.9em;
     line-height: 1.0em;
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.post-header:after {
-  content: "";
-  display: block;
-  clear: both;
-}
 
 ul.post-tags {
     position: absolute;
-    left: 64px;
+    left: $ui-post-image-width;
     bottom: 0;
     margin: 5px;
     right: 5px;
-    color: #888;
+    color: $ui-post-tag-color;
     font-size: 0.8em;
     line-height: 1.1em;
     font-family: Helvetica, Arial, sans-serif;
@@ -562,31 +630,31 @@ ul.post-tags {
 
 li.post-tag {
     display: inline;
-}
 
-li.post-tag:after {
-    content: ",";
-}
+    &:after {
+        content: ",";
+    }
 
-li.post-tag:last-child:after {
-    content: "";
+    &:last-child:after {
+         content: "";
+    }
 }
 
 .post-body {
     padding: 0;
     margin: 0;
-    background: #4a4a4a;
-    height: 110px;
+    background: $ui-post-body-background-color;
+    height: $ui-post-body-height;
 }
 
 .post-title {
     position: absolute;
-    left: 64px;
+    left: $ui-post-image-width;
     right: 0;
     bottom: 0;
     padding: 5px;
     margin: 0;
-    color: #ccc;
+    color: $ui-post-title-color;
     font-weight: normal;
     font-size: 1.0em;
     line-height: 1.0em;
@@ -597,13 +665,12 @@ li.post-tag:last-child:after {
 }
 
 .post-content {
-    height: 100px;
+    height: $ui-post-content-height;
     padding: 5px;
     font-weight: normal;
-    color: #222;
+    color: $ui-post-content-color;
     font-size: 0.8em;
     line-height: 1.0em;
     font-family: Helvetica, Arial, sans-serif;
     overflow-y: auto;
 }
-
