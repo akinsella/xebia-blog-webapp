@@ -1,59 +1,74 @@
 
-$background-color: #444;
+$ui-background-color: #fefefe;
 
-$post-pages-color: #141517;
+$post-pages-color: #ccc;
 
 $link-active-color: #292929;
 $link-color: #ccc;
 $link-hover-color: #222;
 
-$header-font-color: #C6D345;
-$header-font-shadow-color: #999;
+$header-font-color: #3D1B3A;
+$header-font-shadow-color: #fff;
 
-$app-border-top-color: #222;
-$app-border-bottom-color: #999;
+$app-border-top-color: #bbb;
+$app-border-bottom-color: #ddd;
 
-$master-border-right-color: #111;
+$master-border-right-color: #bbb;
 
+$search-font-color: #888;
 $search-background-color: #eee;
+$search-border-color: #ccc;
 $search-placeholder-font-color: #9c9c9c;
 
 $toolbar-border-bottom-color: #999;
-$toolbar-font-color: #ddd;
+$toolbar-font-color: #3D1B3A;
 
-$ui-border-top-color: #666;
-$ui-border-bottom-color: #111;
-$ui-linear-gradient-light-color: #444;
-$ui-linear-gradient-dark-color: #333;
+$ui-border-top-color: #eee;
+$ui-border-bottom-color: #ccc;
+
+$ui-linear-gradient-light-color: #fff;
+$ui-linear-gradient-dark-color: #f1f1f1;
 $ui-linear-gradient-selected-light-color: #5C7DAB;
 $ui-linear-gradient-selected-dark-color: #406281;
 
-$ui-master-list-item-h1-color: #ddd;
-$ui-master-list-item-h3-color: #aaa;
-$ui-master-list-item-color: #ddd;
+$ui-master-list-item-h1-color: #3d1b3a;
+$ui-master-list-item-h3-color: #401c3d;
+$ui-master-list-item-color: #52244e;
 
-$footer-website-font-color: #ccc;
+// FIXME : Does not work
 $footer-copyright-font-color: #777;
 $footer-separator-color: #999;
 $footer-icon-box-shadow-color: #222;
 
-$ui-aside-color: #bbb;
-$ui-aside-border-color: #666;
+$master-list-item-border-top-color: #eee;
+$master-list-item-border-bottom-color: #ccc;
 
-$ui-aside-linear-gradient-light-color: #393939;
-$ui-aside-linear-gradient-dark-color: #292929;
+$ui-aside-color: #3d1b3a;
+$ui-aside-border-color: #999;
 
-$ui-master-content-background-color: #333;
+$ui-aside-linear-gradient-light-color: #eee;
+$ui-aside-linear-gradient-dark-color: #ddd;
 
-$ui-page-item-selected-linear-gradient-light-color: #a5cd4e;
-$ui-page-item-selected-linear-gradient-dark-color: #6b8f1a;
+$ui-master-background-color: $ui-background-color;
 
-$ui-post-header-background-color: #333;
-$ui-post-author-background-color: #aaa;
-$ui-post-date-background-color: #aaa;
-$ui-post-body-background-color: #4a4a4a;
+$ui-page-item-selected-linear-gradient-light-color: #401c3d;
+$ui-page-item-selected-linear-gradient-dark-color: #3d1b3a;
+
+$ui-page-item-selected-box-shadow-top-color: #ddd;
+$ui-page-item-selected-box-shadow-bottom-color: #bbb;
+
+$ui-page-item-selected-box-shadow-selected-top-color: #666;
+$ui-page-item-selected-box-shadow-selected-bottom-color: #444;
+
+$ui-load-indicator-wrapper-color: #ccc;
+
+
+$ui-post-header-background-color: #ddd;
+$ui-post-author-color: #444;
+$ui-post-date-color: #444;
+$ui-post-body-background-color: #f0f0f0;
 $ui-post-tag-color: #888;
-$ui-post-title-color: #ccc;
+$ui-post-title-color: #666;
 $ui-post-content-color: #222;
 
 $ui-post-body-height: 110px;
@@ -66,9 +81,6 @@ $footer-height: 44px;
 $toolbar-height: 84px;
 $toolbar-width: $master-width - 20;
 $master-item-height: 60px;
-
-$master-list-item-border-top-color: #666;
-$master-list-item-border-bottom-color: #111;
 
 @mixin border-top($color) {
     border-top: 1px solid $color;
@@ -169,7 +181,7 @@ html, body {
     height: 100%;
     /*fixes the page-bounce on desktop safari. tested on version 5.1 / mac */
     overflow: hidden;
-    background: $background-color;
+    background: $ui-background-color;
 }
 
 textarea, input {
@@ -187,16 +199,10 @@ ul {
 }
 
 a {
-    text-decoration: none;
     color: $link-color;
-
-    &:hover {
-        color: $link-hover-color;
-    }
-
-    &:active {
-        color: $link-active-color;
-    }
+    text-decoration: none;
+    &:hover { color: $link-hover-color; }
+    &:active { color: $link-active-color; }
 }
 
 header {
@@ -320,6 +326,10 @@ article {
     width: $master-width;
 }
 
+.toolbar a {
+    color: $toolbar-font-color;
+}
+
 .tb-icons {
     margin: 20px 0 20px 0;
     padding: 0;
@@ -335,8 +345,9 @@ article {
     left: 10px;
     right: 10px;
     bottom: 10px;
+    color: $search-font-color;
 	font-family: Helvetica,Arial,sans-serif;
-	border: 1px solid black;
+	border: 1px solid $search-border-color;
 	background: $search-background-color;
     height: 1.6em;
     line-height: 1.6em;
@@ -426,11 +437,6 @@ article {
     font-family: 'Lobster', cursive;
 }
 
-#website {
-    color: $footer-website-font-color;
-    padding-right: 5px;
-}
-
 #copyright {
     color: $footer-copyright-font-color;
     padding-left: 5px;
@@ -443,10 +449,6 @@ article {
 #footer .separator {
     color: $footer-separator-color;
     padding-left: 5px;
-}
-
-#footer .icon {
-    box-shadow: 3px 3px 5px $footer-icon-box-shadow-color;
 }
 
 .aside {
@@ -473,7 +475,7 @@ article {
 
 #master-content {
     z-index: 0;
-    background: $ui-master-content-background-color;
+    background: $ui-master-background-color;
 }
 
 .load-indicator-wrapper {
@@ -483,7 +485,8 @@ article {
     width: 80px;
     height: 80px;
     margin: -40px -40px;
-    background: #3a3a3a;
+    background: $ui-load-indicator-wrapper-color;
+    opacity: 0.75;
 
     @include border-radius(0.8em);
 }
@@ -508,7 +511,7 @@ article {
     height: 30px;
     bottom: 0px;
     text-align: center;
-    background: $background-color;
+    background: $ui-background-color;
 }
 
 #post-pages {
@@ -531,7 +534,11 @@ article {
    	text-indent: -9999px;
 
    	@include border-radius(16px);
-    @include box-shadow(inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05));
+
+    @include box-shadow(
+        inset 0px 1px 1px $ui-page-item-selected-box-shadow-top-color,
+        0px 1px 1px $ui-page-item-selected-box-shadow-bottom-color
+    );
 }
 
 #post-pages ul li.selected {
@@ -539,7 +546,10 @@ article {
         $ui-page-item-selected-linear-gradient-light-color,
         $ui-page-item-selected-linear-gradient-dark-color
     );
-    @include box-shadow(inset 0px 1px 1px rgba(255,255,255, .4), 0px 1px 1px rgba(0,0,0, .3));
+    @include box-shadow(
+        inset 0px 1px 1px $ui-page-item-selected-box-shadow-selected-top-color,
+        0px 1px 1px $ui-page-item-selected-box-shadow-selected-bottom-color
+    );
 }
 
 #post-list {
@@ -585,29 +595,29 @@ article {
     }
 }
 
-.post-author {
-    padding: 5px;
-    margin: 5px;
-    font-weight: bold;
-    color: $ui-post-author-background-color;
-    font-size: 0.9em;
-    line-height: 1.0em;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
 .post-image {
     float:left;
-    margin-right: 10px;
+    margin-right: 5px;
     width: 64px;
     height: 64px;
+}
+
+.post-author {
+    padding: 5px;
+    margin: 0;
+    font-weight: bold;
+    color: $ui-post-author-color;
+    font-size: 0.8em;
+    line-height: 1.0em;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .post-date {
     float: right;
     padding: 5px;
     font-weight: bold;
-    color: $ui-post-date-background-color;
-    font-size: 0.9em;
+    color: $ui-post-date-color;
+    font-size: 0.8em;
     line-height: 1.0em;
     font-family: Helvetica, Arial, sans-serif;
 }

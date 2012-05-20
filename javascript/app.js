@@ -2,6 +2,14 @@ $(document).ready(function () {
     onReadyState();
 });
 
+String.prototype.capitalize = function(){
+  if(this.length == 0) {
+      return this;
+  }
+  return this[0].toUpperCase() + this.substr(1);
+}
+
+
 function onReadyState() {
     var app = AppModule($);
     app.init();
@@ -171,7 +179,7 @@ function AppModule($) {
                 var html = template({ posts: data.posts, pages: data.pagination.pages });
 
                 $('#detail').html(html);
-                $('#context-title').text(tagSlug);
+                $('#context-title').text(tagSlug.capitalize());
             },
             error: function() {
                 $('#detail').html("");

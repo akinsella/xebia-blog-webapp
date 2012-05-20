@@ -146,54 +146,54 @@
   100.00% {
     background-position: 0 -440px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003168}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003180}}
 html, body {
   height: 100%;
   /*fixes the page-bounce on desktop safari. tested on version 5.1 / mac */
   overflow: hidden;
-  background: #444444; }
+  background: #fefefe; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003175}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003187}}
 textarea, input {
   outline: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003179}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003191}}
 body, ul, li, h1, h2, h3 {
   padding: 0;
   margin: 0;
   border: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003197}}
 ul {
   list-style: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003189}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003201}}
 a {
-  text-decoration: none;
-  color: #cccccc; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003193}}
+  color: #cccccc;
+  text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003204}}
   a:hover {
     color: #222222; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003197}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003205}}
   a:active {
     color: #292929; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003202}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003208}}
 header {
   height: 88px;
   line-height: 88px;
-  color: #c6d345;
+  color: #3d1b3a;
   font-size: 2em;
-  text-shadow: 1px 1px 1px #999999;
+  text-shadow: 1px 1px 1px white;
   font-family: 'Lobster', cursive; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003211}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003217}}
 #context-title {
   padding-left: 10px;
   float: right;
   padding: 0 20px 0 20px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003224}}
 footer {
   position: absolute;
   height: 44px;
@@ -204,44 +204,44 @@ footer {
   font-size: 1em;
   font-family: 'Lobster', cursive; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003229}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003235}}
 article {
   padding: 5px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003233}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003239}}
 .app {
   position: absolute;
   top: 89px;
   bottom: 45px;
   left: 0;
   right: 0;
-  border-top: 1px solid #222222;
-  border-bottom: 1px solid #999999; }
+  border-top: 1px solid #bbbbbb;
+  border-bottom: 1px solid #dddddd; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003243}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003249}}
 .scrolling {
   display: block;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003250}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003256}}
 .master {
   position: absolute;
   width: 320px;
   bottom: 0;
   top: 0;
   border: 0;
-  border-right: 1px solid #111111; }
+  border-right: 1px solid #bbbbbb; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003259}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003265}}
 #master-content {
   position: absolute;
   width: 320px;
   top: 86px;
   bottom: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003266}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003272}}
 .detail {
   position: absolute;
   top: 0;
@@ -249,41 +249,41 @@ article {
   bottom: 0;
   left: 321px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003275}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003281}}
 #app-name {
   margin-left: 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003279}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003285}}
 #app-name img {
   vertical-align: middle; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003283}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003289}}
 #header .icons ul li {
   display: inline;
   padding-left: 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003288}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003294}}
 #footer .icons {
   margin: 6px 0 6px 0;
   float: right;
   padding: 0 10px 0 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003294}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003300}}
 #footer .icons ul li {
   display: inline;
   padding-left: 10px;
   vertical-align: middle;
   opacity: 0.5; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003301}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003307}}
 #footer .icons ul li:hover {
   opacity: 1; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003305}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003311}}
 #category {
   width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003309}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003315}}
 .toolbar {
   position: absolute;
   border: 0;
@@ -291,30 +291,35 @@ article {
   margin: 0;
   border-bottom: 1px solid #999999;
   font-size: 0.9em;
-  color: #dddddd;
+  color: #3d1b3a;
   font-family: 'Lobster', cursive;
   height: 84px;
   overflow: hidden;
   width: 320px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003329}}
+.toolbar a {
+  color: #3d1b3a; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003333}}
 .tb-icons {
   margin: 20px 0 20px 0;
   padding: 0;
   text-align: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003339}}
 .tb-icons a {
   padding: 0 8px 0 8px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003343}}
 #search {
   position: absolute;
   left: 10px;
   right: 10px;
   bottom: 10px;
+  color: #888888;
   font-family: Helvetica,Arial,sans-serif;
-  border: 1px solid black;
+  border: 1px solid #cccccc;
   background: #eeeeee;
   height: 1.6em;
   line-height: 1.6em;
@@ -325,80 +330,80 @@ article {
   -ms-border-radius: 1em;
   border-radius: 1em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003364}}
 #search:-webkit-input-placeholder {
   color: #9c9c9c;
   font-style: italic; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003368}}
 #search:-moz-placeholder {
   color: #9c9c9c;
   font-style: italic; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003372}}
 #search:-ms-placeholder {
   color: #9c9c9c;
   font-style: italic; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003376}}
 .toolbar, header, footer {
-  border-top: 1px solid #666666;
-  border-bottom: 1px solid #111111;
-  background: #444444;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#333333));
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #cccccc;
+  background: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1f1f1));
   /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(#444444, #333333);
+  background-image: -webkit-linear-gradient(white, #f1f1f1);
   /* Chrome 10+, Saf5.1+ */
-  background-image: -moz-linear-gradient(#444444, #333333);
+  background-image: -moz-linear-gradient(white, #f1f1f1);
   /* FF3.6 */
-  background-image: -ms-linear-gradient(#444444, #333333);
+  background-image: -ms-linear-gradient(white, #f1f1f1);
   /* IE10 */
-  background-image: -o-linear-gradient(#444444, #333333);
+  background-image: -o-linear-gradient(white, #f1f1f1);
   /* Opera 11.10+ */
-  background-image: linear-gradient(#444444, #333333); }
+  background-image: linear-gradient(white, #f1f1f1); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003382}}
 .master ul li {
   position: relative;
   display: table;
   width: 100%;
   height: 60px;
   font-size: 0.8em;
-  color: #dddddd;
+  color: #52244e;
   font-family: Helvetica, Arial, sans-serif;
   padding: .2em 15px .2em 15px;
   padding-right: 36px;
   cursor: pointer;
-  border-top: 1px solid #666666;
-  border-bottom: 1px solid #111111;
-  background: #444444;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#333333));
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #cccccc;
+  background: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1f1f1));
   /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(#444444, #333333);
+  background-image: -webkit-linear-gradient(white, #f1f1f1);
   /* Chrome 10+, Saf5.1+ */
-  background-image: -moz-linear-gradient(#444444, #333333);
+  background-image: -moz-linear-gradient(white, #f1f1f1);
   /* FF3.6 */
-  background-image: -ms-linear-gradient(#444444, #333333);
+  background-image: -ms-linear-gradient(white, #f1f1f1);
   /* IE10 */
-  background-image: -o-linear-gradient(#444444, #333333);
+  background-image: -o-linear-gradient(white, #f1f1f1);
   /* Opera 11.10+ */
-  background-image: linear-gradient(#444444, #333333); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003389}}
+  background-image: linear-gradient(white, #f1f1f1); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003400}}
   .master ul li:hover {
-    background: #373737;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#373737), to(#262626));
+    background: #f2f2f2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e4e4e4));
     /* Saf4+, Chrome */
-    background-image: -webkit-linear-gradient(#373737, #262626);
+    background-image: -webkit-linear-gradient(#f2f2f2, #e4e4e4);
     /* Chrome 10+, Saf5.1+ */
-    background-image: -moz-linear-gradient(#373737, #262626);
+    background-image: -moz-linear-gradient(#f2f2f2, #e4e4e4);
     /* FF3.6 */
-    background-image: -ms-linear-gradient(#373737, #262626);
+    background-image: -ms-linear-gradient(#f2f2f2, #e4e4e4);
     /* IE10 */
-    background-image: -o-linear-gradient(#373737, #262626);
+    background-image: -o-linear-gradient(#f2f2f2, #e4e4e4);
     /* Opera 11.10+ */
-    background-image: linear-gradient(#373737, #262626); }
+    background-image: linear-gradient(#f2f2f2, #e4e4e4); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003408}}
 .master ul li.selected {
   background: #5c7dab;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5c7dab), to(#406281));
@@ -412,7 +417,7 @@ article {
   background-image: -o-linear-gradient(#5c7dab, #406281);
   /* Opera 11.10+ */
   background-image: linear-gradient(#5c7dab, #406281); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003400}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003411}}
   .master ul li.selected:hover {
     background: #51709d;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#51709d), to(#385570));
@@ -427,51 +432,42 @@ article {
     /* Opera 11.10+ */
     background-image: linear-gradient(#51709d, #385570); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003408}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003419}}
 .master ul li .li-content {
   display: table-cell;
   vertical-align: middle;
   padding-top: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003414}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003425}}
 .master ul li h1 {
   font-size: 1.2em;
   line-height: 1.5em;
-  color: #dddddd;
+  color: #3d1b3a;
   font-family: 'Lobster', cursive; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003421}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003432}}
 .master ul li h3 {
   font-size: 0.9em;
   line-height: 1.2em;
-  color: #aaaaaa;
+  color: #401c3d;
   padding-left: 10px;
   font-family: 'Lobster', cursive; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003429}}
-#website {
-  color: #cccccc;
-  padding-right: 5px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003434}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003440}}
 #copyright {
   color: #777777;
   padding-left: 5px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003439}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003445}}
 #footer-left {
   margin: 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003443}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003449}}
 #footer .separator {
   color: #999999;
   padding-left: 5px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003448}}
-#footer .icon {
-  box-shadow: 3px 3px 5px #222222; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003452}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003454}}
 .aside {
   position: absolute;
   right: 10px;
@@ -482,21 +478,21 @@ article {
   font-family: Helvetica,Arial,sans-serif;
   white-space: nowrap;
   text-align: center;
-  color: #bbbbbb;
+  color: #3d1b3a;
   padding: .2em .5em;
-  border: 1px solid #666666;
-  background: #393939;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#393939), to(#292929));
+  border: 1px solid #999999;
+  background: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#dddddd));
   /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(#393939, #292929);
+  background-image: -webkit-linear-gradient(#eeeeee, #dddddd);
   /* Chrome 10+, Saf5.1+ */
-  background-image: -moz-linear-gradient(#393939, #292929);
+  background-image: -moz-linear-gradient(#eeeeee, #dddddd);
   /* FF3.6 */
-  background-image: -ms-linear-gradient(#393939, #292929);
+  background-image: -ms-linear-gradient(#eeeeee, #dddddd);
   /* IE10 */
-  background-image: -o-linear-gradient(#393939, #292929);
+  background-image: -o-linear-gradient(#eeeeee, #dddddd);
   /* Opera 11.10+ */
-  background-image: linear-gradient(#393939, #292929);
+  background-image: linear-gradient(#eeeeee, #dddddd);
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
@@ -506,12 +502,12 @@ article {
   -ms-border-radius: 1em;
   border-radius: 1em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003474}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003476}}
 #master-content {
   z-index: 0;
-  background: #333333; }
+  background: #fefefe; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003479}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003481}}
 .load-indicator-wrapper {
   position: absolute;
   left: 50%;
@@ -519,14 +515,15 @@ article {
   width: 80px;
   height: 80px;
   margin: -40px -40px;
-  background: #3a3a3a;
+  background: #cccccc;
+  opacity: 0.75;
   -webkit-border-radius: 0.8em;
   -moz-border-radius: 0.8em;
   -o-border-radius: 0.8em;
   -ms-border-radius: 0.8em;
   border-radius: 0.8em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003491}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003494}}
 .load-indicator {
   position: absolute;
   margin: 20px;
@@ -553,7 +550,7 @@ article {
   transform: scaleX(1) scaleY(1);
   transform-origin: top left; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003504}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003507}}
 #posts-footer {
   position: absolute;
   display: table;
@@ -561,20 +558,20 @@ article {
   height: 30px;
   bottom: 0px;
   text-align: center;
-  background: #444444; }
+  background: #fefefe; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003514}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003517}}
 #post-pages {
   display: table-cell;
   text-align: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003519}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003522}}
 #post-pages ul {
   padding: 7px 0 5px 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003523}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003526}}
 #post-pages ul li {
-  background: #141517;
+  background: #cccccc;
   display: inline-block;
   width: 12px;
   height: 12px;
@@ -586,29 +583,29 @@ article {
   -o-border-radius: 16px;
   -ms-border-radius: 16px;
   border-radius: 16px;
-  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 1px rgba(255, 255, 255, 0.05);
-  -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 1px rgba(255, 255, 255, 0.05);
-  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 1px rgba(255, 255, 255, 0.05); }
+  -webkit-box-shadow: inset 0px 1px 1px #dddddd, 0px 1px 1px #bbbbbb;
+  -moz-box-shadow: inset 0px 1px 1px #dddddd, 0px 1px 1px #bbbbbb;
+  box-shadow: inset 0px 1px 1px #dddddd, 0px 1px 1px #bbbbbb; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003537}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003544}}
 #post-pages ul li.selected {
-  background: #a5cd4e;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#a5cd4e), to(#6b8f1a));
+  background: #401c3d;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#401c3d), to(#3d1b3a));
   /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(#a5cd4e, #6b8f1a);
+  background-image: -webkit-linear-gradient(#401c3d, #3d1b3a);
   /* Chrome 10+, Saf5.1+ */
-  background-image: -moz-linear-gradient(#a5cd4e, #6b8f1a);
+  background-image: -moz-linear-gradient(#401c3d, #3d1b3a);
   /* FF3.6 */
-  background-image: -ms-linear-gradient(#a5cd4e, #6b8f1a);
+  background-image: -ms-linear-gradient(#401c3d, #3d1b3a);
   /* IE10 */
-  background-image: -o-linear-gradient(#a5cd4e, #6b8f1a);
+  background-image: -o-linear-gradient(#401c3d, #3d1b3a);
   /* Opera 11.10+ */
-  background-image: linear-gradient(#a5cd4e, #6b8f1a);
-  -webkit-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.3); }
+  background-image: linear-gradient(#401c3d, #3d1b3a);
+  -webkit-box-shadow: inset 0px 1px 1px #666666, 0px 1px 1px #444444;
+  -moz-box-shadow: inset 0px 1px 1px #666666, 0px 1px 1px #444444;
+  box-shadow: inset 0px 1px 1px #666666, 0px 1px 1px #444444; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003545}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003555}}
 #post-list {
   position: absolute;
   top: 0;
@@ -617,18 +614,18 @@ article {
   right: 0; }
 
 @media screen and (max-width: 960px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003554}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003564}}
   #post-list ul li.item {
     display: block;
     height: auto; } }
 @media screen and (min-width: 961px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003561}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003571}}
   #post-list ul li.post-item {
     width: 50%;
     display: block;
     height: auto;
     float: left; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003569}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003579}}
 .post {
   /*padding: 10px;*/
   margin: 10px;
@@ -638,45 +635,45 @@ article {
   -ms-border-radius: 0.4em;
   border-radius: 0.4em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003576}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003586}}
 .post-header {
   position: relative;
-  background: #333333;
+  background: #dddddd;
   height: 64px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003581}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003591}}
   .post-header:after {
     content: "";
     display: block;
     clear: both; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003588}}
-.post-author {
-  padding: 5px;
-  margin: 5px;
-  font-weight: bold;
-  color: #aaaaaa;
-  font-size: 0.9em;
-  line-height: 1.0em;
-  font-family: Helvetica, Arial, sans-serif; }
-
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003598}}
 .post-image {
   float: left;
-  margin-right: 10px;
+  margin-right: 5px;
   width: 64px;
   height: 64px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003605}}
+.post-author {
+  padding: 5px;
+  margin: 0;
+  font-weight: bold;
+  color: #444444;
+  font-size: 0.8em;
+  line-height: 1.0em;
+  font-family: Helvetica, Arial, sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003615}}
 .post-date {
   float: right;
   padding: 5px;
   font-weight: bold;
-  color: #aaaaaa;
-  font-size: 0.9em;
+  color: #444444;
+  font-size: 0.8em;
   line-height: 1.0em;
   font-family: Helvetica, Arial, sans-serif; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003616}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003626}}
 ul.post-tags {
   position: absolute;
   left: 64px;
@@ -691,24 +688,24 @@ ul.post-tags {
   text-overflow: ellipsis;
   overflow: hidden; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003631}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003641}}
 li.post-tag {
   display: inline; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003634}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003644}}
   li.post-tag:after {
     content: ","; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003638}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003648}}
   li.post-tag:last-child:after {
     content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003643}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003653}}
 .post-body {
   padding: 0;
   margin: 0;
-  background: #4a4a4a;
+  background: #f0f0f0;
   height: 110px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003650}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003660}}
 .post-title {
   position: absolute;
   left: 64px;
@@ -716,7 +713,7 @@ li.post-tag {
   bottom: 0;
   padding: 5px;
   margin: 0;
-  color: #cccccc;
+  color: #666666;
   font-weight: normal;
   font-size: 1.0em;
   line-height: 1.0em;
@@ -725,7 +722,7 @@ li.post-tag {
   text-overflow: ellipsis;
   overflow: hidden; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003667}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/akinsella\/Workspace\/Projects\/xebia-blog-webapp\/css\/app\.scss}line{font-family:\00003677}}
 .post-content {
   height: 100px;
   padding: 5px;
